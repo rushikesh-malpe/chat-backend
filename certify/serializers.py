@@ -60,7 +60,9 @@ class LoginSerializer(serializers.Serializer):
         
         return attrs
 
-
+class GoogleAuthSerializer(serializers.Serializer):
+    code = serializers.CharField(required=True, help_text="Authorization code from Facebook")
+    redirect_uri = serializers.URLField(required=True, help_text="The redirect URI for Facebook OAuth")
 
 # class UserCreateSerializer(serializers.ModelSerializer):
 #     class Meta:

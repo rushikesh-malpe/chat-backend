@@ -22,5 +22,9 @@ class MessageEnum(Enum):
     EMAIL_VERIFIED = "Email verified successfully."
     EMAIL_VERIFICATION_FAILED = "Email verification failed."
     OTP_RESENT_TIME_LIMIT="Please wait before requesting a new OTP."
+    NO_AUTH_CODE_PROVIDED="No code provided"
+    FAILED_TO_GET_AUTH_TOKEN="Failed to get access token from Google"
 
 
+class GrantTypeEnum(Enum):
+    GOOGLE_AUTH_GRANT_TYPE='authorization_code'
