@@ -1,0 +1,20 @@
+CREATE TABLE users(
+    id SERIAL NOT NULL,
+    cts timestamp with time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    uts timestamp with time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "firstName" varchar,
+    "middleName" varchar,
+    "lastName" varchar,
+    address text,
+    address2 text,
+    zipcode integer,
+    city text,
+    "stateId" integer,
+    "countryId" integer,
+    "phoneNumber" text,
+    email varchar,
+    password text,
+    "profileUrl" text,
+    "userName" text,
+    "phoneNumberOtp" text
+);
